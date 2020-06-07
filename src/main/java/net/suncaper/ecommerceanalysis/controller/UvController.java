@@ -1,5 +1,6 @@
 package net.suncaper.ecommerceanalysis.controller;
 
+import net.suncaper.ecommerceanalysis.domain.UvDetailDay;
 import net.suncaper.ecommerceanalysis.domain.UvDetailMonth;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -22,8 +23,18 @@ public class UvController {
     public List<Map<String, Object>> listUvMonth() {
         String sql = "SELECT * FROM dws_uv_detail_month ORDER BY month ASC";
 
-        List<Map<String, Object>> results = jdbcTemplate.queryForList(sql);
+        List<Map<String, Object>> uvMonthResults = jdbcTemplate.queryForList(sql);
 
-        return results;
+        return uvMonthResults;
+    }
+
+    @GetMapping("day")
+    @ResponseBody
+    public List<Map<String,Object>> listUvDay(){
+        String sql = "SELECT COUNT(user_id) AS totals, dt FROM dws_uv_detail_day GROUP BY dt";
+
+        List<Map<String,Object>> uvDayResults = jdbcTemplate.queryForList(sql);
+
+        return uvDayResults;
     }
 }
