@@ -37,4 +37,15 @@ public class UvController {
 
         return uvDayResults;
     }
+
+    @GetMapping("week")
+    @ResponseBody
+    public List<Map<String,Object>> ListUvWeek(){
+        String sql = "SELECT * FROM dws_uv_detail_wk ORDER BY wk_num ASC";
+
+        List<Map<String, Object>> uvWeekResults = jdbcTemplate.queryForList(sql);
+
+        return uvWeekResults;
+    }
+
 }
