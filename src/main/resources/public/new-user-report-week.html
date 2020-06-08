@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>week-report</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@4.8.0/dist/echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+<div id="main" style="width: 600px;height:400px;"></div>
+<script>
+    //AJAX 加载月活跃数
+    var xmlHttp = new XMLHttpRequest();
+
+    xmlHttp.onreadystatechange = function (ev) {
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+            var rep = JSON.parse(xmlHttp.responseText);
+
+            var weeks = [];
+            var totals = [];
+            for(var i = 0; i < rep.length; i++) {
+                weeks.push('第'+rep[i].week_num + '周');
+                totals.push(rep[i].total);
+            }
+
+            var chart = echarts.init(document.getElementById("main"));
+            var option = {
+                title: {
+                    text: '周度新增用户数'
+                },
+                legend: {
+                    data: ["新增用户数"]
+                },
+                xAxis: {
+                    data: weeks
+                },
+                yAxis: {},
+                series: [{
+                    name: '活跃数',
+                    type: 'bar',
+                    data: totals
+                }]
+            }
+            chart.setOption(option)
+        }
+    }
+    xmlHttp.open('GET', '/uw/week', true)
+    xmlHttp.send();
+
+</script>
+</body>
+</html>
