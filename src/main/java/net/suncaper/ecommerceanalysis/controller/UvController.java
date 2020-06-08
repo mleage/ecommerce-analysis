@@ -37,4 +37,14 @@ public class UvController {
 
         return uvDayResults;
     }
+
+    @GetMapping("user")
+    @ResponseBody
+    public List<Map<String,Object>> listUserLog(){
+        String sql = "SELECT COUNT(*) FROM user_log";
+
+        List<Map<String,Object>> userLogResults = jdbcTemplate.queryForList(sql);
+
+        return userLogResults;
+    }
 }

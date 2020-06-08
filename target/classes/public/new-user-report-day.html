@@ -27,17 +27,17 @@
             var chart = echarts.init(document.getElementById("main"));
             var option = {
                 title: {
-                    text: '每日用户活跃数'
+                    text: '每日新增用户'
                 },
                 legend: {
-                    data: ["活跃数"]
+                    data: ["新增用户"]
                 },
                 xAxis: {
                     data: dt
                 },
                 yAxis: {},
                 series: [{
-                    name: '活跃数',
+                    name: '新增用户',
                     type: 'line',
                     data: totals
                 }]
@@ -45,7 +45,7 @@
             chart.setOption(option)
         }
     }
-    xmlHttp.open('GET', '/uv/day', true)
+    xmlHttp.open('GET', '/uw/day', true)
     xmlHttp.send();
 
 </script>

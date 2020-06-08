@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca42d079-18ab-42ef-a454-f37e5d03e9a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain/UvDetailDay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/day-report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/controller/UwController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain/UserLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain/UwNewUserDay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/new-user-report-day.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/user_report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/controller/UvController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/controller/UvController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/month-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/month-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/day-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/day-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/UvController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/UvController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/day-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/day-report.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -78,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1591516392396</updated>
       <workItem from="1591516393721" duration="1570000" />
-      <workItem from="1591518414579" duration="5151000" />
+      <workItem from="1591518414579" duration="9842000" />
     </task>
     <servers />
   </component>

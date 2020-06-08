@@ -18,11 +18,12 @@
 
             var dt = [];
             var totals = [];
+            var total;
             for(var i = 0; i < rep.length; i++) {
                 dt.push(rep[i].dt + '日期');
                 totals.push(rep[i].totals);
+                total += rep[i].totals;
             }
-
             var chart = echarts.init(document.getElementById("main"));
             var option = {
                 title: {

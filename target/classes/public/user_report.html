@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>month-report</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@4.8.0/dist/echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+<div id="main">活跃总数为<b id="user"></b></div>
+<script>
+    //AJAX 加载月活跃数
+    var xmlHttp = new XMLHttpRequest();
+    var total = 0;
+    xmlHttp.onreadystatechange = function (ev) {
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+            var rep = JSON.parse(xmlHttp.responseText);
+            for(var i = 0; i < rep.length; i++) {
+                total += rep[i].total;
+            }
+        }
+    }
+    document.getElementById ('user').innerHTML = total;
+    xmlHttp.open('GET', '/uv/user', true)
+    xmlHttp.send();
+
+</script>
+</body>
+</html>
