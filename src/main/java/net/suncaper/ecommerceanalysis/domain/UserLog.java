@@ -1,13 +1,9 @@
 package net.suncaper.ecommerceanalysis.domain;
 
 public class UserLog {
-    public Double getTotal() {
-        return total;
-    }
-
-    public void setTotal(Double total) {
-        this.total = total;
-    }
-
-    private Double total;
+    private int totalUser;
+    private int totalStore;
+    private int totalBrand;
+    private int doubleEleven;
+    private int totalDeal;
 }
