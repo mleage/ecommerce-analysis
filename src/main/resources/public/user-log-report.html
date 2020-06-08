@@ -15,39 +15,41 @@
     xmlHttp.onreadystatechange = function (ev) {
         if(xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             var rep = JSON.parse(xmlHttp.responseText);
-
-            var dt = [];
-            var totals = [];
-            var total;
-            for(var i = 0; i < rep.length; i++) {
-                dt.push(rep[i].dt + '日期');
-                totals.push(rep[i].totals);
-                total += rep[i].totals;
-            }
             var chart = echarts.init(document.getElementById("main"));
-            var option = {
+            option = {
                 title: {
-                    text: '每日用户活跃数'
+                    text: '南丁格尔玫瑰图',
+                    subtext: '纯属虚构',
+                    left: 'center'
                 },
-                legend: {
-                    data: ["活跃数"]
+                tooltip: {
+                    trigger: 'item',
+                    formatter: '{a} <br/>{b} : {c} ({d}%)'
                 },
-                xAxis: {
-                    data: dt
-                },
-                yAxis: {},
-                series: [{
-                    name: '活跃数',
-                    type: 'line',
-                    data: totals
-                }]
-            }
+                series: [
+                    {
+                        name: '半径模式',
+                        type: 'pie',
+                        radius: [20, 110],
+                        center: ['25%', '50%'],
+                        roseType: 'radius',
+                        label: {
+                            show: false
+                        },
+                        emphasis: {
+                            label: {
+                                show: true
+                            }
+                        },
+                        data: rep
+                    }
+                ]
+            };
             chart.setOption(option)
         }
     }
-    xmlHttp.open('GET', '/uv/day', true)
+    xmlHttp.open('GET', '/ul/total', true)
     xmlHttp.send();
-
 </script>
 </body>
 </html>
