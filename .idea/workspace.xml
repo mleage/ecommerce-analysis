@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca42d079-18ab-42ef-a454-f37e5d03e9a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/controller/UwController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain/UserLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain/UwNewUserDay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/new-user-report-day.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/user_report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain/UvDetailWeek.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/week-report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/controller/UvController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/controller/UvController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/day-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/day-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/UvController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/UvController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/public/day-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/day-report.html" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +36,11 @@
   </component>
   <component name="ProjectId" id="1cz11VdQQnvmKKEhmPahK8C46MC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -48,6 +50,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/public" />
+      <recent name="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -81,7 +89,8 @@
       <option name="presentableId" value="Default" />
       <updated>1591516392396</updated>
       <workItem from="1591516393721" duration="1570000" />
-      <workItem from="1591518414579" duration="9842000" />
+      <workItem from="1591518414579" duration="5151000" />
+      <workItem from="1591551280776" duration="1021000" />
     </task>
     <servers />
   </component>
@@ -93,10 +102,58 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="273" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591551303242">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="273" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1591551303242" />
+    <state x="569" y="357" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1591551309207">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="569" y="357" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1440.877@0.23.1440.877" timestamp="1591551309207" />
+    <state width="699" height="230" key="GridCell.Tab.0.bottom" timestamp="1591552332571">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="699" height="230" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1591552332571" />
+    <state width="699" height="230" key="GridCell.Tab.0.center" timestamp="1591552332569">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="699" height="230" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1591552332569" />
+    <state width="699" height="230" key="GridCell.Tab.0.left" timestamp="1591552332569">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="699" height="230" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1591552332569" />
+    <state width="699" height="230" key="GridCell.Tab.0.right" timestamp="1591552332570">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="699" height="230" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1591552332570" />
+    <state width="699" height="230" key="GridCell.Tab.1.bottom" timestamp="1591552332573">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="699" height="230" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1591552332573" />
+    <state width="699" height="230" key="GridCell.Tab.1.center" timestamp="1591552332572">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="699" height="230" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1591552332572" />
+    <state width="699" height="230" key="GridCell.Tab.1.left" timestamp="1591552332571">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="699" height="230" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1591552332571" />
+    <state width="699" height="230" key="GridCell.Tab.1.right" timestamp="1591552332572">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="699" height="230" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1591552332572" />
+    <state x="486" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1591551291441">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="486" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1591551291441" />
   </component>
 </project>

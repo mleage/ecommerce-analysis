@@ -28,23 +28,14 @@ public class UvController {
         return uvMonthResults;
     }
 
-    @GetMapping("day")
+    @GetMapping("week")
     @ResponseBody
-    public List<Map<String,Object>> listUvDay(){
-        String sql = "SELECT COUNT(user_id) AS totals, dt FROM dws_uv_detail_day GROUP BY dt";
+    public List<Map<String,Object>> ListUvWeek(){
+        String sql = "SELECT * FROM dws_uv_detail_wk ORDER BY wk_num ASC";
 
-        List<Map<String,Object>> uvDayResults = jdbcTemplate.queryForList(sql);
+        List<Map<String, Object>> uvWeekResults = jdbcTemplate.queryForList(sql);
 
-        return uvDayResults;
+        return uvWeekResults;
     }
 
-    @GetMapping("user")
-    @ResponseBody
-    public List<Map<String,Object>> listUserLog(){
-        String sql = "SELECT COUNT(*) FROM user_log";
-
-        List<Map<String,Object>> userLogResults = jdbcTemplate.queryForList(sql);
-
-        return userLogResults;
-    }
 }
