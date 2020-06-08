@@ -25,7 +25,7 @@ public class UlController {
         String sqltotalstore = "SELECT COUNT(DISTINCT merchant_id) AS value FROM user_log";
         String sqltotalbrand = "SELECT COUNT(DISTINCT brand_id) AS value FROM user_log";
         String sqltotaldeal = "SELECT COUNT(*) FROM user_log WHERE action=2";
-        String sqldoubleeleven = "SELECT COUNT(*) FROM user_log WHERE month='11' AND day='11'";
+        String sqldoubleeleven = "SELECT COUNT(*) AS value FROM day11";
         String sqltotalmale = "SELECT COUNT(*) FROM user_log where gender=2 AND action =2";
         String sqltotalfemale = "SELECT COUNT(*) FROM user_log where gender=1 AND action =2";
 

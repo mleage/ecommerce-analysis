@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>month-report</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@4.8.0/dist/echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+<div id="main" style="width: 600px;height:400px;"></div>
+<script>
+    //AJAX 加载月活跃数
+    var xmlHttp = new XMLHttpRequest();
+
+    xmlHttp.onreadystatechange = function (ev) {
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+            var rep = JSON.parse(xmlHttp.responseText);
+            var chart = echarts.init(document.getElementById("main"));
+            option = {
+                title: {
+                    text: '南丁格尔玫瑰图',
+                    subtext: '纯属虚构',
+                    left: 'center'
+                },
+                tooltip: {
+                    trigger: 'item',
+                    formatter: '{a} <br/>{b} : {c} ({d}%)'
+                },
+                series: [
+                    {
+                        name: '半径模式',
+                        type: 'pie',
+                        radius: [20, 110],
+                        center: ['25%', '50%'],
+                        roseType: 'radius',
+                        label: {
+                            show: false
+                        },
+                        emphasis: {
+                            label: {
+                                show: true
+                            }
+                        },
+                        data: rep
+                    }
+                ]
+            };
+            chart.setOption(option)
+        }
+    }
+    xmlHttp.open('GET', '/ul/total', true)
+    xmlHttp.send();
+</script>
+</body>
+</html>
