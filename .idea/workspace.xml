@@ -2,28 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca42d079-18ab-42ef-a454-f37e5d03e9a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain/Day11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain/PrimaryData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain/male_female.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/male-female-report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain/CityConsumeAbility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/controller/UlController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/controller/UlController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain/UserLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/user-log-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/user-log-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/Top10Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/Top10Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/city-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/city-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/UlController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/UlController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/UvController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/UvController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/UwController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/UwController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/BrandTop10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/BrandTop10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/ItemTop10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/ItemTop10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/MerchantTop10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/MerchantTop10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/UserLog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/UvDetailWeek.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/UvDetailWeek.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/UwNewUserDay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/UwNewUserDay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/UwNewuserMonth.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/UwNewuserMonth.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/UwNewuserWeek.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/UwNewuserWeek.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/user-log-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/user-log-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/city-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/city-report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -76,8 +60,12 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ToolWindowEvent Log.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -119,6 +107,7 @@
       <workItem from="1591516393721" duration="1570000" />
       <workItem from="1591518414579" duration="9842000" />
       <workItem from="1591587891573" duration="1148000" />
+      <workItem from="1591677958939" duration="3378000" />
     </task>
     <servers />
   </component>
@@ -139,69 +128,81 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="273" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591551303242">
+    <state x="273" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591677923503">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="273" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1591551303242" />
-    <state x="533" y="169" key="#com.intellij.ide.util.MemberChooser" timestamp="1591676342467">
+    <state x="273" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1591677923503" />
+    <state x="533" y="169" key="#com.intellij.ide.util.MemberChooser" timestamp="1591678158876">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="533" y="169" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1591676342467" />
+    <state x="533" y="169" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1591678158876" />
     <state x="569" y="357" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1591551309207">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="569" y="357" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1440.877@0.23.1440.877" timestamp="1591551309207" />
-    <state width="699" height="230" key="GridCell.Tab.0.bottom" timestamp="1591676959233">
+    <state width="678" height="230" key="GridCell.Tab.0.bottom" timestamp="1591681423797">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="699" height="230" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1591676959233" />
-    <state width="699" height="230" key="GridCell.Tab.0.center" timestamp="1591676959231">
+    <state width="678" height="230" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1591681423797" />
+    <state width="678" height="230" key="GridCell.Tab.0.center" timestamp="1591681423796">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="699" height="230" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1591676959231" />
-    <state width="699" height="230" key="GridCell.Tab.0.left" timestamp="1591676959231">
+    <state width="678" height="230" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1591681423796" />
+    <state width="678" height="230" key="GridCell.Tab.0.left" timestamp="1591681423796">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="699" height="230" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1591676959231" />
-    <state width="699" height="230" key="GridCell.Tab.0.right" timestamp="1591676959231">
+    <state width="678" height="230" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1591681423796" />
+    <state width="678" height="230" key="GridCell.Tab.0.right" timestamp="1591681423797">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="699" height="230" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1591676959231" />
-    <state width="699" height="230" key="GridCell.Tab.1.bottom" timestamp="1591676959235">
+    <state width="678" height="230" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1591681423797" />
+    <state width="678" height="230" key="GridCell.Tab.1.bottom" timestamp="1591681423799">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="699" height="230" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1591676959235" />
-    <state width="699" height="230" key="GridCell.Tab.1.center" timestamp="1591676959235">
+    <state width="678" height="230" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1591681423799" />
+    <state width="678" height="230" key="GridCell.Tab.1.center" timestamp="1591681423798">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="699" height="230" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1591676959235" />
-    <state width="699" height="230" key="GridCell.Tab.1.left" timestamp="1591676959234">
+    <state width="678" height="230" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1591681423798" />
+    <state width="678" height="230" key="GridCell.Tab.1.left" timestamp="1591681423798">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="699" height="230" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1591676959234" />
-    <state width="699" height="230" key="GridCell.Tab.1.right" timestamp="1591676959235">
+    <state width="678" height="230" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1591681423798" />
+    <state width="678" height="230" key="GridCell.Tab.1.right" timestamp="1591681423799">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="699" height="230" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1591676959235" />
-    <state width="699" height="285" key="GridCell.Tab.2.bottom" timestamp="1591673690687">
+    <state width="678" height="230" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1591681423799" />
+    <state width="699" height="285" key="GridCell.Tab.2.bottom" timestamp="1591677954501">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="699" height="285" key="GridCell.Tab.2.bottom/0.23.1440.877@0.23.1440.877" timestamp="1591673690687" />
-    <state width="699" height="285" key="GridCell.Tab.2.center" timestamp="1591673690686">
+    <state width="699" height="285" key="GridCell.Tab.2.bottom/0.23.1440.877@0.23.1440.877" timestamp="1591677954501" />
+    <state width="699" height="285" key="GridCell.Tab.2.center" timestamp="1591677954501">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="699" height="285" key="GridCell.Tab.2.center/0.23.1440.877@0.23.1440.877" timestamp="1591673690686" />
-    <state width="699" height="285" key="GridCell.Tab.2.left" timestamp="1591673690686">
+    <state width="699" height="285" key="GridCell.Tab.2.center/0.23.1440.877@0.23.1440.877" timestamp="1591677954501" />
+    <state width="699" height="285" key="GridCell.Tab.2.left" timestamp="1591677954500">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="699" height="285" key="GridCell.Tab.2.left/0.23.1440.877@0.23.1440.877" timestamp="1591673690686" />
-    <state width="699" height="285" key="GridCell.Tab.2.right" timestamp="1591673690686">
+    <state width="699" height="285" key="GridCell.Tab.2.left/0.23.1440.877@0.23.1440.877" timestamp="1591677954500" />
+    <state width="699" height="285" key="GridCell.Tab.2.right" timestamp="1591677954501">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="699" height="285" key="GridCell.Tab.2.right/0.23.1440.877@0.23.1440.877" timestamp="1591673690686" />
+    <state width="699" height="285" key="GridCell.Tab.2.right/0.23.1440.877@0.23.1440.877" timestamp="1591677954501" />
+    <state x="0" y="179" key="RollbackChangesDialog" timestamp="1591679657172">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="0" y="179" key="RollbackChangesDialog/0.23.1440.877@0.23.1440.877" timestamp="1591679657172" />
+    <state x="208" y="43" key="SettingsEditor" timestamp="1591677941709">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="208" y="43" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1591677941709" />
     <state x="486" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1591551291441">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="486" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1591551291441" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1591678039163">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1591678039163" />
   </component>
 </project>

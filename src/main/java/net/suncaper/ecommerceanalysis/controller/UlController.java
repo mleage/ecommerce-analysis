@@ -35,7 +35,7 @@ public class UlController {
     @GetMapping("city")
     @ResponseBody
     public List<Map<String, Object>> listCity() {
-        String sql = "SELECT province AS name, COUNT(*) AS value FROM user_log WHERE action=2 GROUP BY province ORDER BY value DESC";
+        String sql = "SELECT * from consume_ability";
 
         List<Map<String, Object>> cityResults = jdbcTemplate.queryForList(sql);
 
