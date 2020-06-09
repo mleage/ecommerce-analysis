@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>month-report</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@4.8.0/dist/echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+<div id="main" style="width: 600px;height:400px;"></div>
+<script>
+    //AJAX 加载月活跃数
+    var xmlHttp = new XMLHttpRequest();
+
+    xmlHttp.onreadystatechange = function (ev) {
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+            var rep = JSON.parse(xmlHttp.responseText);
+
+            var chart = echarts.init(document.getElementById("main"));
+            var option = {
+
+                color: ['#32c5e9','#ff9f7f'],
+                tooltip : {
+                    trigger: 'item',
+                    formatter: "{a} <br/>{b} : {c} ({d}%)"
+                },
+                toolbox: {
+                    show : true,
+
+                },
+                legend: {
+                    type:"scroll",
+                    orient: 'vertical',
+                    left:'10%',
+                    align:'left',
+                    top:'middle',
+                    textStyle: {
+                        color:'#8C8C8C'
+                    },
+                    height:150
+                },
+                series : [
+                    {
+                        name:'男女购物比例',
+                        type:'pie',
+                        radius : [0, 150],
+
+
+                        data:[
+                            {value:rep[0].male_buy, name:'男生购物比例'},
+                            {value:rep[0].male_buy, name:'女生购物比例'}
+                        ]
+                    }
+                ]
+            };
+            chart.setOption(option)
+            console.log(rep[0])
+        }
+    }
+    xmlHttp.open('GET', '/ul/male_female', true)
+    xmlHttp.send();
+
+</script>
+</body>
+</html>
