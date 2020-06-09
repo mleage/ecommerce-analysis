@@ -15,40 +15,155 @@
     xmlHttp.onreadystatechange = function (ev) {
         if(xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             var rep = JSON.parse(xmlHttp.responseText);
+
             var chart = echarts.init(document.getElementById("main"));
+            xData = ["总用户数", "总商铺数","总商品数","总交易数", "双十一成交量"];
+            yData = [rep[0].total_user, rep[0].total_shop, rep[0].total_brand, rep[0].total_trad, rep[1].day11Trad];
             option = {
-                title: {
-                    text: '南丁格尔玫瑰图',
-                    subtext: '纯属虚构',
-                    left: 'center'
+                backgroundColor: '#061326',
+                "grid": {
+                    "top": "25%",
+                    "left": "-5%",
+                    "bottom": "5%",
+                    "right": "5%",
+                    "containLabel": true
                 },
-                tooltip: {
-                    trigger: 'item',
-                    formatter: '{a} <br/>{b} : {c} ({d}%)'
+                tooltip:{
+                    show:true
                 },
-                series: [
-                    {
-                        name: '半径模式',
-                        type: 'pie',
-                        radius: [20, 110],
-                        center: ['25%', '50%'],
-                        roseType: 'radius',
-                        label: {
-                            show: false
+                animation: false,
+                "xAxis": [{
+                    "type": "category",
+                    "data": xData,
+                    "axisTick": {
+                        "alignWithLabel": true
+                    },
+                    "nameTextStyle": {
+                        "color": "#82b0ec"
+                    },
+                    "axisLine": {
+                        show: false,
+                        "lineStyle": {
+                            "color": "#82b0ec"
+                        }
+                    },
+                    "axisLabel": {
+                        "textStyle": {
+                            "color": "#fff"
                         },
-                        emphasis: {
-                            label: {
-                                show: true
+                        margin: 30
+                    }
+                }],
+                "yAxis": [{
+                    show: false,
+                    "type": "value",
+                    "axisLabel": {
+                        "textStyle": {
+                            "color": "#fff"
+                        },
+                    },
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#0c2c5a"
+                        }
+                    },
+                    "axisLine": {
+                        "show": false
+                    }
+                }],
+                "series": [{
+                    "name": "",
+                    type: 'pictorialBar',
+                    symbolSize: [40, 10],
+                    symbolOffset: [0, -6],
+                    symbolPosition: 'end',
+                    z: 12,
+                    // "barWidth": "0",
+                    "label": {
+                        "normal": {
+                            "show": true,
+                            "position": "top",
+                            // "formatter": "{c}%"
+                            fontSize: 25,
+                            fontWeight: 'bold',
+                            color: '#34DCFF'
+                        }
+                    },
+                    color: "#2DB1EF",
+                    data: yData
+                },
+                    {
+                        name: '',
+                        type: 'pictorialBar',
+                        symbolSize: [40, 10],
+                        symbolOffset: [0, 7],
+                        // "barWidth": "20",
+                        z: 12,
+                        "color": "#2DB1EF",
+                        "data": yData
+                    },
+                    {
+                        name: '',
+                        type: 'pictorialBar',
+                        symbolSize: [50, 15],
+                        symbolOffset: [0, 12],
+                        z: 10,
+                        itemStyle: {
+                            normal: {
+                                color: 'transparent',
+                                borderColor: '#2EA9E5',
+                                borderType: 'solid',
+                                borderWidth: 1
                             }
                         },
-                        data: rep
+                        data: yData
+                    },
+                    {
+                        name: '',
+                        type: 'pictorialBar',
+                        symbolSize: [70, 20],
+                        symbolOffset: [0, 18],
+                        z: 10,
+                        itemStyle: {
+                            normal: {
+                                color: 'transparent',
+                                borderColor: '#19465D',
+                                borderType: 'solid',
+                                borderWidth: 2
+                            }
+                        },
+                        data: yData
+                    },
+                    {
+                        type: 'bar',
+                        //silent: true,
+                        "barWidth": "40",
+                        barGap: '10%', // Make series be overlap
+                        barCateGoryGap: '10%',
+                        itemStyle: {
+                            normal: {
+                                color: new echarts.graphic.LinearGradient(0, 0, 0, 0.7, [{
+                                    offset: 0,
+                                    color: "#38B2E6"
+                                },
+                                    {
+                                        offset: 1,
+                                        color: "#0B3147"
+                                    }
+                                ]),
+                                opacity: .8
+                            },
+                        },
+                        data: yData
                     }
                 ]
             };
             chart.setOption(option)
+
+            console.log(rep)
         }
     }
-    xmlHttp.open('GET', '/ul/total', true)
+    xmlHttp.open('GET', '/ul/primaryData', true)
     xmlHttp.send();
 </script>
 </body>

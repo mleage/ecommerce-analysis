@@ -2,23 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca42d079-18ab-42ef-a454-f37e5d03e9a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/controller/Top10Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain/BrandTop10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain/ItemTop10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain/MerchantTop10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/brand-top-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/item-top-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/merchant-top-report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain/Day11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain/PrimaryData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain/male_female.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/male-female-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/controller/UlController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/controller/UlController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain/UserLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/user-log-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/user-log-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/Top10Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/Top10Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/UlController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/UlController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/UvController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/UvController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/UwController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/UwController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/UserLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/UserLog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/BrandTop10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/BrandTop10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/ItemTop10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/ItemTop10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/MerchantTop10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/MerchantTop10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/UserLog.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/UvDetailWeek.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/UvDetailWeek.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/UwNewUserDay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/UwNewUserDay.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/UwNewuserMonth.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/UwNewuserMonth.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/UwNewuserWeek.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/UwNewuserWeek.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/user-log-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/user-log-report.html" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,18 +85,6 @@
       <recent name="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="EcommerceAnalysisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ecommerce-analysis" />
@@ -99,6 +93,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -137,46 +143,62 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="273" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1591551303242" />
-    <state x="533" y="169" key="#com.intellij.ide.util.MemberChooser" timestamp="1591576915696">
+    <state x="533" y="169" key="#com.intellij.ide.util.MemberChooser" timestamp="1591676342467">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="533" y="169" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1591576915696" />
+    <state x="533" y="169" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1591676342467" />
     <state x="569" y="357" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1591551309207">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="569" y="357" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1440.877@0.23.1440.877" timestamp="1591551309207" />
-    <state width="699" height="230" key="GridCell.Tab.0.bottom" timestamp="1591583454166">
+    <state width="699" height="230" key="GridCell.Tab.0.bottom" timestamp="1591676959233">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="699" height="230" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1591583454166" />
-    <state width="699" height="230" key="GridCell.Tab.0.center" timestamp="1591583454166">
+    <state width="699" height="230" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1591676959233" />
+    <state width="699" height="230" key="GridCell.Tab.0.center" timestamp="1591676959231">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="699" height="230" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1591583454166" />
-    <state width="699" height="230" key="GridCell.Tab.0.left" timestamp="1591583454165">
+    <state width="699" height="230" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1591676959231" />
+    <state width="699" height="230" key="GridCell.Tab.0.left" timestamp="1591676959231">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="699" height="230" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1591583454165" />
-    <state width="699" height="230" key="GridCell.Tab.0.right" timestamp="1591583454166">
+    <state width="699" height="230" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1591676959231" />
+    <state width="699" height="230" key="GridCell.Tab.0.right" timestamp="1591676959231">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="699" height="230" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1591583454166" />
-    <state width="699" height="230" key="GridCell.Tab.1.bottom" timestamp="1591583454168">
+    <state width="699" height="230" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1591676959231" />
+    <state width="699" height="230" key="GridCell.Tab.1.bottom" timestamp="1591676959235">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="699" height="230" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1591583454168" />
-    <state width="699" height="230" key="GridCell.Tab.1.center" timestamp="1591583454167">
+    <state width="699" height="230" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1591676959235" />
+    <state width="699" height="230" key="GridCell.Tab.1.center" timestamp="1591676959235">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="699" height="230" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1591583454167" />
-    <state width="699" height="230" key="GridCell.Tab.1.left" timestamp="1591583454166">
+    <state width="699" height="230" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1591676959235" />
+    <state width="699" height="230" key="GridCell.Tab.1.left" timestamp="1591676959234">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="699" height="230" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1591583454166" />
-    <state width="699" height="230" key="GridCell.Tab.1.right" timestamp="1591583454167">
+    <state width="699" height="230" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1591676959234" />
+    <state width="699" height="230" key="GridCell.Tab.1.right" timestamp="1591676959235">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="699" height="230" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1591583454167" />
+    <state width="699" height="230" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1591676959235" />
+    <state width="699" height="285" key="GridCell.Tab.2.bottom" timestamp="1591673690687">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="699" height="285" key="GridCell.Tab.2.bottom/0.23.1440.877@0.23.1440.877" timestamp="1591673690687" />
+    <state width="699" height="285" key="GridCell.Tab.2.center" timestamp="1591673690686">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="699" height="285" key="GridCell.Tab.2.center/0.23.1440.877@0.23.1440.877" timestamp="1591673690686" />
+    <state width="699" height="285" key="GridCell.Tab.2.left" timestamp="1591673690686">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="699" height="285" key="GridCell.Tab.2.left/0.23.1440.877@0.23.1440.877" timestamp="1591673690686" />
+    <state width="699" height="285" key="GridCell.Tab.2.right" timestamp="1591673690686">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="699" height="285" key="GridCell.Tab.2.right/0.23.1440.877@0.23.1440.877" timestamp="1591673690686" />
     <state x="486" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1591551291441">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
