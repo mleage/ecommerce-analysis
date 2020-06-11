@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>month-report</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@4.8.0/dist/echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+<div id="main" style="width: 600px;height:400px;"></div>
+<script>
+    //AJAX 加载月活跃数
+    var xmlHttp = new XMLHttpRequest();
+
+    xmlHttp.onreadystatechange = function (ev) {
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+            var rep = JSON.parse(xmlHttp.responseText);
+
+            var todays1 = [];
+            var todays2 = [];
+            var todays3 = [];
+            var todays4 = [];
+            var todays7 = [];
+            var todays14 = [];
+            var rates1 = [];
+            var rates2 = [];
+            var rates3 = [];
+            var rates4 = [];
+            var rates7 = [];
+            var rates14 = [];
+            for(var i = 0; i < rep.length; i++) {
+                if (rep[i].session == 1) {
+                    todays1.push(rep[i].today)
+                    rates1.push(rep[i].rate)
+                }
+                if (rep[i].session == 2) {
+                    todays2.push(rep[i].today)
+                    rates2.push(rep[i].rate)
+                }
+                if (rep[i].session == 3) {
+                    todays3.push(rep[i].today)
+                    rates3.push(rep[i].rate)
+                }
+                if (rep[i].session == 4) {
+                    todays4.push(rep[i].today)
+                    rates4.push(rep[i].rate)
+                }
+                if (rep[i].session == 7) {
+                    todays7.push(rep[i].today)
+                    rates7.push(rep[i].rate)
+                }
+                if (rep[i].session == 14) {
+                    todays14.push(rep[i].today)
+                    rates14.push(rep[i].rate)
+                }
+            }
+            var chart = echarts.init(document.getElementById("main"));
+            var option = {
+                title: {
+                    text: '留存率统计'
+                },
+                tooltip: {
+                    trigger: 'axis'
+                },
+                legend: {
+                    data: ['1日留存', '2日留存', '3日留存', '4日留存', '7日留存', '14日留存']
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                toolbox: {
+                    feature: {
+                        saveAsImage: {}
+                    }
+                },
+                xAxis: {
+                    type: 'category',
+                    boundaryGap: false,
+                    data: todays1
+                },
+                yAxis: {
+                    type: 'value'
+                },
+                series: [
+                    {
+                        name: '1日留存率',
+                        type: 'line',
+                        data: rates1
+                    },
+                    {
+                        name: '2日留存率',
+                        type: 'line',
+                        data: rates2
+                    },
+                    {
+                        name: '3日留存率',
+                        type: 'line',
+                        data: rates3
+                    },
+                    {
+                        name: '4日留存率',
+                        type: 'line',
+                        data: rates4
+                    },
+                    {
+                        name: '7日留存率',
+                        type: 'line',
+                        data: rates7
+                    },
+                    {
+                        name: '14日留存率',
+                        type: 'line',
+                        data: rates14
+                    }
+                ]
+            };
+            chart.setOption(option)
+        }
+    }
+    xmlHttp.open('GET', '/ux/retention', true)
+    xmlHttp.send();
+
+</script>
+</body>
+</html>
