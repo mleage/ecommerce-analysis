@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca42d079-18ab-42ef-a454-f37e5d03e9a7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/ecommerce-analysis.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/ecommerce-analysis.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/UlController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/UlController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/UyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/controller/UyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/ActiveUserDay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/ActiveUserDay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/CityConsumeAbility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/CityConsumeAbility.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/Day11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/Day11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/Funnel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/Funnel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/PrimaryData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/PrimaryData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/male_female.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/suncaper/ecommerceanalysis/domain/male_female.class" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,6 +114,11 @@
       <workItem from="1591518414579" duration="9842000" />
       <workItem from="1591587891573" duration="1148000" />
       <workItem from="1591677958939" duration="3378000" />
+      <workItem from="1591759677679" duration="74000" />
+      <workItem from="1591772163476" duration="5000" />
+      <workItem from="1591838247577" duration="1886000" />
+      <workItem from="1591866372161" duration="249000" />
+      <workItem from="1591886370182" duration="873000" />
     </task>
     <servers />
   </component>
