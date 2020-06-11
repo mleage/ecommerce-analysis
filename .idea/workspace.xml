@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca42d079-18ab-42ef-a454-f37e5d03e9a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain/AdsContinuityUvCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/active-seven-days-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/controller/UyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/controller/UyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/controller/WuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/controller/WuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/active-seven-days-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/active-seven-days-report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

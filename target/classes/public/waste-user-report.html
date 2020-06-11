@@ -21,32 +21,31 @@
             var total;
             for(var i = 0; i < rep.length; i++) {
                 dt.push(rep[i].dt + '日期');
-                totals.push(rep[i].continuity_count);
-                total += rep[i].continuity_count;
+                totals.push(rep[i].totals);
+                total += rep[i].totals;
             }
             var chart = echarts.init(document.getElementById("main"));
             var option = {
                 title: {
-                    text: '最近7天用户活跃数'
+                    text: '每日流失用户数'
                 },
                 legend: {
-                    data: ["活跃数"]
+                    data: ["流失数"]
                 },
                 xAxis: {
                     data: dt
                 },
                 yAxis: {},
                 series: [{
-                    name: '活跃数',
+                    name: '流失数',
                     type: 'line',
                     data: totals
                 }]
             }
             chart.setOption(option)
-            console.log(rep)
         }
     }
-    xmlHttp.open('GET', '/wu/sevenDays', true)
+    xmlHttp.open('GET', '/wu/day', true)
     xmlHttp.send();
 
 </script>
