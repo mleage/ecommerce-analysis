@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca42d079-18ab-42ef-a454-f37e5d03e9a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/controller/UxController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain/RetentionUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/suncaper/ecommerceanalysis/domain/SilentUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/retention-user-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/silent-user-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
