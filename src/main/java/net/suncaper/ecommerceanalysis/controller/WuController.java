@@ -1,6 +1,6 @@
 package net.suncaper.ecommerceanalysis.controller;
 
-import net.suncaper.ecommerceanalysis.domain.WasteUserDay;
+//import net.suncaper.ecommerceanalysis.domain.WasteUserDay;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
@@ -25,5 +25,15 @@ public class WuController {
         List<Map<String,Object>> wuDayResults = jdbcTemplate.queryForList(sql);
 
         return wuDayResults;
+    }
+
+    @GetMapping("sevenDays")
+    @ResponseBody
+    public List<Map<String, Object>> listSevenDays() {
+        String sql = "SELECT * FROM ads_continuity_uv_count order by dt";
+
+        List<Map<String, Object>> listSevenDaysResults = jdbcTemplate.queryForList(sql);
+
+        return listSevenDaysResults;
     }
 }
