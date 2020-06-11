@@ -2,9 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>month-report</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@4.8.0/dist/echarts.min.js"></script>
 </head>
 <body>
+<!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+<div id="main" style="width: 600px;height:400px;"></div>
+<script>
+    //AJAX 加载月活跃数
+    var xmlHttp = new XMLHttpRequest();
 
+    xmlHttp.onreadystatechange = function (ev) {
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+            var rep = JSON.parse(xmlHttp.responseText);
+
+            var actions = []
+            var totals = 0
+            var dataList = []
+            for(var i = 0; i < rep.length; i++) {
+                if (rep[i].action == 0) {dataList.push({value:rep[i].total, name:'点击'})}
+                if (rep[i].action == 1) {dataList.push({value:rep[i].total, name:'加入购物车'})}
+                if (rep[i].action == 2) {dataList.push({value:rep[i].total, name:'购买'})}
+                if (rep[i].action == 3) {dataList.push({value:rep[i].total, name:'收藏'})}
+                totals = totals + rep[i].total
+            }
+            var chart = echarts.init(document.getElementById("main"));
+            var option = {
+                title: {
+                    text: '漏斗图', //设置标题
+                    subtext: '基于某电商数据'//设置副标题
+                },
+//默认色板
+                color: ['#4FD0C7', '#A997FD', '#F9DE6E',  '#99AAFC'],
+
+// 图例
+                legend: {
+                    orient: 'horizontal', // 布局方式，默认为水平布局，'horizontal' ¦ 'vertical'
+                    x: 'center',// 水平安放位置，默认为全图居中,可选'center' ¦ 'left' ¦ 'right'还有y：‘top’
+                    top: '80%', //距离顶部距离
+                    data: ['点击', '加入购物车', '购买', '收藏'], //显示的数据
+                    itemWidth: 10, //图例的宽度
+                    itemHeight: 10, //图例色块的高度
+                    itemGap: 15, //图例之间的距离
+                    padding: [0, 27, 0, 27], //图例padding值
+                    textStyle: {
+                        fontSize: 12,
+                        color: '#6B6B6B'
+                    }
+                },
+                calculable: true,  // 默认关闭可计算特性
+                series: [  //漏斗图显示位置以及排序方式
+                    {
+                        type: 'funnel',
+                        x: 'center',
+                        y: 'top',
+                        top: 30,
+                        bottom: 120,
+                        width: 330,
+                        sort: 'descending',
+                        emphasis: {
+                            label: {
+                                fontSize: 20
+                            }
+                        },
+                        data: dataList
+                    }
+                ]
+            }
+
+
+            chart.setOption(option)
+            console.log(dataList)
+        }
+    }
+    xmlHttp.open('GET', '/uy/funnel', true)
+    xmlHttp.send();
+
+</script>
 </body>
 </html>
